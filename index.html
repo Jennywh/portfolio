@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Han Wang</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <style>
+        .is-expanded {
+
+            width: 100%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="firstSlide" class="hero is-info is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+
+
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-6 is-offset-3">
+                    <h1 class="title">
+                        Welcome. My name is Han. 
+                    </h1>
+           
+                    
+                    <h2 class="title is-5" style='position: absolute;width:inherit' id='welcome'></h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(function () {
+
+            // $('#firstSlide').hide(400); 
+
+            if (localStorage.getItem('username') != null) {
+                let link = "./_user-page.html"
+                let username = localStorage.getItem('username')
+                $('.login').replaceWith(`
+                <a class="button is-light login" href=${link}>
+              Hi, ${username}
+            </a>`)
+                $('.signup').hide()
+            }
+
+            var dataText = ["Welcome!!",
+                "What brought you here??",
+                "Let me guess..",
+                "Hello Georgia Tech Admission :)",
+                "Oops, I am not trained in UI/UX Design in any way..",
+                "Therefore I want to use this space to display some of my work in research and development. ",
+            ];
+
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+                // check if text isn't finished yet
+                if (i < (text.length)) {
+                    // add next character to h1
+                    // $('#welcome').html(`${$('#welcome').html()}${text2.charAt(j)}`);
+                    $('#welcome').html(text.substring(0, i + 1) + '<span aria-hidden="true"></span>');
+
+                    // $('#welcome').innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+                    // wait for a while and call this function again for next character
+                    setTimeout(function () {
+                        typeWriter(text, i + 1, fnCallback)
+                    }, 70);
+                }
+                // text finished, call callback if there is a callback function
+                else if (typeof fnCallback == 'function') {
+                    // call callback after timeout
+                    setTimeout(fnCallback, 700);
+                }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+                if (typeof dataText[i] == 'undefined') {
+                    setTimeout(function () {
+                        StartTextAnimation(0);
+                    }, 20000);
+                }
+                // check if dataText[i] exists
+                if (dataText[i] != undefined) {
+                    // text exists! start typewriter animation
+                    typeWriter(dataText[i], 0, function () {
+                        // after callback (and whole text has been animated), start next text
+                        StartTextAnimation(i + 1);
+                    });
+                }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+        });
+
+    </script>
+
+</body>
+
+</html>
