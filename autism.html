@@ -1,183 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jenny Wang- Portfolio - Project</title>
+    <meta
+      name="description"
+      content="THOMSOON - Single page with minimalist two column description and one photo. Download free now with file Photoshop! "
+    />
+    <meta
+      name="keywords"
+      content="thomsoon, simplicity, theme, html5, single page, boxed portfolio"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="thomsoon.com" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
 
-  <meta charset="utf-8">
-  <title>Han Wang- Portfolio - Project</title>
-  <meta name="description" content="THOMSOON - Single page with minimalist two column description and one photo. Download free now with file Photoshop! ">
-  <meta name="keywords" content="thomsoon, simplicity, theme, html5, single page, boxed portfolio">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="thomsoon.com">
-  <link rel="icon" type="image/png" href="img/icon.png" />
+    <!--Style-->
 
-<!--Style-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-responsive.css" />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-responsive.css">
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <body>
+    <!--Preloader-->
 
-</head>
-
-<body>
-
-<!--Preloader-->
-
-<div class="preloader" id="preloader">
-    <div class="item">
-      <div class="spinner">
+    <div class="preloader" id="preloader">
+      <div class="item">
+        <div class="spinner"></div>
       </div>
     </div>
-</div>
 
-<div class="opacity-nav">
+    <div class="opacity-nav">
+      <div class="menu-index" id="buttons" style="z-index: 999999">
+        <i class="fa fa-close"></i>
+      </div>
 
-        <div class="menu-index" id="buttons" style="z-index:999999">
-        <i class="fa  fa-close"></i>
-        </div>
+      <ul class="menu-fullscreen">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
-        <ul class="menu-fullscreen">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-</div>
-
-
-  <!--Header-->
-  <header id="fullscreen">
-
-    <div class="logo" id="full"><a  href="index.html">Han Wang</a></div>
+    <!--Header-->
+    <header id="fullscreen">
+      <div class="logo" id="full"><a href="index.html">Jenny Wang</a></div>
 
       <div class="menu-index" id="button">
-      <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
       </div>
+    </header>
 
-  </header>
+    <div class="clear"></div>
 
-  <div class="clear"></div>
+    <!--Content-->
 
-  <!--Content-->
+    <div class="content" id="ajax-content">
+      <div class="text-intro">
+        <h1>Autistic Research</h1>
+        <div class="one-column">
+          <p>
+            Convoluted Neural Networks | Medical Imaging | Neuroimaging | Python
+          </p>
+          <p>
+            <a
+              href="img/The Application of Convolutional Neural Networks for Subcortical Structure Segmentation - Full Paper.pdf"
+              >Read more about my research</a
+            >
+          </p>
+        </div>
 
-  <div class="content" id="ajax-content">
+        <div class="two-column">
+          <p>
+            During my junior year, I worked with Dr. Martin Styner at UNC on the
+            application of Convolutional Neural Networks for Subcortical
+            Structure Segmentation.
 
+            <br /><br />
+            I developed raw data processing scripts to improve image feeding
+            efficiency into the Convolutional Neural Networks I used the
+            symmetric nature of the human brain to increase our limited training
+            data by 200%. In the end, I acquired the model which can segment
+            12-24 months old infants’ subcortical structures with 80% accuracy
+            or higher
+          </p>
 
-        <div class="text-intro">
+          <p></p>
+        </div>
 
-          <h1>Autistic Research</h1>
-	          <div class="one-column">
-	            <p>Convoluted Neural Networks | Medical Imaging | Neuroimaging | Python </p>
-              <p> <a href="img/The Application of Convolutional Neural Networks for Subcortical Structure Segmentation - Full Paper.pdf">Read more about my research</a></p>
-	          </div>
+        <div class="clear"></div>
 
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-		          <div class="two-column">
-                <p>
-                  During my junior year, I worked with Dr. Martin Styner at UNC on the application of Convolutional Neural Networks for Subcortical Structure Segmentation.
+        <p
+          class="center"
+          style="width: 100%; text-align: center; margin-bottom: 30px"
+        >
+          Sample input
+        </p>
+        <img src="img/autistic.png" width="100%" /><br /><br /><br /><br />
 
-                  <br><br>
-                  I developed raw data processing scripts to improve image feeding efficiency into the Convolutional Neural Networks I used the symmetric nature of the human brain to increase our limited training data by 200%. In the end, I acquired the model which can segment 12-24 months old infants’ subcortical structures with 80% accuracy or higher
-                </p>
+        <a
+          href="img/The Application of Convolutional Neural Networks for Subcortical Structure Segmentation - Full Paper.pdf"
+        >
+          <p
+            class="center"
+            style="
+              width: 100%;
+              margin-bottom: 30px;
+              font-weight: bold;
+              font-size: 15px;
+              color: #00acee;
+            "
+          >
+            Click here to read more about my research
+          </p>
+        </a>
 
-		            <p>
-                  
+        <a
+          href="img/The Application of Convolutional Neural Networks for Subcortical Structure Segmentation - Full Paper.pdf"
+        >
+          <img src="img/autism-paper.PNG" width="100%" />
+        </a>
 
-
-                </p>
-               
-		          </div>
-
-                <div class="clear"></div>
-
-				        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-                <p class="center" style="width: 100%; text-align: center; margin-bottom: 30px;">
-                  Sample input
-                </p>
-                <img src="img/autistic.png" width="100%"><br/><br/><br/><br/>
-                
-                <a href="img/The Application of Convolutional Neural Networks for Subcortical Structure Segmentation - Full Paper.pdf">
-                  <p class="center" style="
-                  width: 100%;
-                  margin-bottom: 30px;
-                  font-weight: bold;
-                  font-size: 15px;
-                  color: #00acee;">
-                    Click here to read more about my research 
-                  </p>
-                </a>
-                
-
-                <a href="img/The Application of Convolutional Neural Networks for Subcortical Structure Segmentation - Full Paper.pdf">
-                  <img src="img/autism-paper.PNG" width="100%">
-                </a>
-               
-                <br/><br/><br/>
-					        <div class="prev-next">
-					          <div class="prev-button"><a href="2048.html">Previous work</a></div>
-					          <div class="next-button"><a href="snapp.html">Next work</a></div>
-					        </div>
-                
-            </div>
-
+        <br /><br /><br />
+        <div class="prev-next">
+          <div class="prev-button"><a href="2048.html">Previous work</a></div>
+          <div class="next-button"><a href="snapp.html">Next work</a></div>
+        </div>
+      </div>
     </div>
 
+    <!--Home Sidebar-->
 
+    <div id="ajax-sidebar"></div>
 
-  <!--Home Sidebar-->
-
-<div id="ajax-sidebar"></div>
-
-
-  <!--Footer-->
-  <footer id="ajax-footer">
-
-    <div class="footer-margin">
-      <div class="social-footer">
-
- 
-          <a href="https://www.linkedin.com/in/han-wang-813212132/"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/jenny_hw98/"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.facebook.com/han.wang.1614460/"><i class="fa fa-facebook"></i></a>
-          <a href="https://github.com/Jenny1998"><i class="fa fa-github"></i></a>
-
+    <!--Footer-->
+    <footer id="ajax-footer">
+      <div class="footer-margin">
+        <div class="social-footer">
+          <a href="https://www.linkedin.com/in/Jenny-wang-813212132/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/jenny_hw98/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/Jenny.wang.1614460/"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://github.com/Jenny1998"
+            ><i class="fa fa-github"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          © 2020 Jenny Wang Portfolio Site. Template credits to Thomsoon.
+        </div>
       </div>
-      <div class="copyright">© 2020 Han Wang Portfolio Site. Template credits to Thomsoon.</div>
+    </footer>
 
-    </div>
+    <!--Scripts-->
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+    <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jkit.1.2.16.min.js"></script>
 
-  </footer>
+    <script src="js/script.js" type="text/javascript"></script>
 
-
-
-<!--Scripts-->
-
-  <script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
-  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
-  <script src="js/typed.js" type="text/javascript"></script>
-  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/jquery.jkit.1.2.16.min.js"></script>
-
-  <script src="js/script.js" type="text/javascript"></script>
-
-	<script>
-    $('#button, #buttons').on('click', function() {
-      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
-    // Animation complete.
-    });
-  </script>
-
-
-</body>
+    <script>
+      $("#button, #buttons").on("click", function () {
+        $(".opacity-nav").fadeToggle("slow", "linear");
+        // Animation complete.
+      });
+    </script>
+  </body>
 </html>

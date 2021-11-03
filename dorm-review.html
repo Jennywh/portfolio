@@ -1,167 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jenny Wang- Portfolio - Project</title>
+    <meta
+      name="description"
+      content="THOMSOON - Single page with minimalist two column description and one photo. Download free now with file Photoshop! "
+    />
+    <meta
+      name="keywords"
+      content="thomsoon, simplicity, theme, html5, single page, boxed portfolio"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="thomsoon.com" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
 
-  <meta charset="utf-8">
-  <title>Han Wang- Portfolio - Project</title>
-  <meta name="description" content="THOMSOON - Single page with minimalist two column description and one photo. Download free now with file Photoshop! ">
-  <meta name="keywords" content="thomsoon, simplicity, theme, html5, single page, boxed portfolio">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="thomsoon.com">
-  <link rel="icon" type="image/png" href="img/icon.png" />
+    <!--Style-->
 
-<!--Style-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-responsive.css" />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-responsive.css">
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <body>
+    <!--Preloader-->
 
-</head>
-
-<body>
-
-<!--Preloader-->
-
-<div class="preloader" id="preloader">
-    <div class="item">
-      <div class="spinner">
+    <div class="preloader" id="preloader">
+      <div class="item">
+        <div class="spinner"></div>
       </div>
     </div>
-</div>
 
-<div class="opacity-nav">
+    <div class="opacity-nav">
+      <div class="menu-index" id="buttons" style="z-index: 999999">
+        <i class="fa fa-close"></i>
+      </div>
 
-        <div class="menu-index" id="buttons" style="z-index:999999">
-        <i class="fa  fa-close"></i>
-        </div>
+      <ul class="menu-fullscreen">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
-        <ul class="menu-fullscreen">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-</div>
-
-
-  <!--Header-->
-  <header id="fullscreen">
-
-    <div class="logo" id="full"><a  href="index.html">Han Wang</a></div>
+    <!--Header-->
+    <header id="fullscreen">
+      <div class="logo" id="full"><a href="index.html">Jenny Wang</a></div>
 
       <div class="menu-index" id="button">
-      <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
       </div>
+    </header>
 
-  </header>
+    <div class="clear"></div>
 
-  <div class="clear"></div>
+    <!--Content-->
 
-  <!--Content-->
+    <div class="content" id="ajax-content">
+      <div class="text-intro">
+        <h1>UNC Dorm-review</h1>
 
-  <div class="content" id="ajax-content">
+        <div class="one-column">
+          <p>
+            Web Design | Front-end Development | Node.js | Bulma | MongoDB |
+            RESTful
+          </p>
+          <p>
+            <a href="http://review-hanwang.cloudapps.unc.edu/"
+              >Link to the website</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/Jenny1998/unc-dorm-review"
+              >Github Repo</a
+            >
+          </p>
+        </div>
 
+        <div class="two-column">
+          <p>
+            Don't we all want to hear other people's opinions of the on-campus
+            dorms as freshmen? I remember the difficulties that I had when
+            trying to select a dorm out of 36 dorms. It could have been an
+            easier choice for the freshmen. So I developed a site for students
+            to leave reviews and comments of dorms they've lived in. These
+            opinions will be very helpful for incoming students.
+          </p>
 
-        <div class="text-intro">
+          <p>
+            I also implemented the ArcGIS map to display the exact location of
+            the dorm. Average ratings are shown when clicked on. It helps
+            students pick the highest-rated dorm within the range of area they
+            would live to reside in.
+          </p>
+        </div>
 
-          <h1>UNC Dorm-review</h1>
+        <div class="clear"></div>
 
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-	          <div class="one-column">
-	            <p>Web Design | Front-end Development | Node.js | Bulma | MongoDB | RESTful</p>
-              <p> <a href="http://review-hanwang.cloudapps.unc.edu/">Link to the website</a></p>
-              <p> <a href="https://github.com/Jenny1998/unc-dorm-review">Github Repo</a></p>
-	          </div>
+        <img src="./img/dorm-review.JPG" width="100%" /><br /><br /><br /><br />
+        <img src="img/review-page.PNG" width="100%" /><br /><br /><br /><br />
+        <img src="img/rating.PNG" width="100%" /><br /><br /><br /><br />
 
-
-		          <div class="two-column">
-                <p>Don't we all want to hear other people's opinions of the on-campus dorms 
-                  as freshmen? I remember the difficulties that I had when trying to select 
-                  a dorm out of 36 dorms. It could have been an easier choice for the freshmen. 
-                  So I developed a site for students to leave reviews and comments of dorms they've lived in. 
-                  These opinions will be very helpful for incoming students. 
-                </p>
-
-		            <p>
-                  I also implemented the ArcGIS map to display the exact location of the dorm. Average ratings are 
-                  shown when clicked on. It helps students pick the highest-rated dorm within the range of area they 
-                  would live to reside in. 
-                </p>
-               
-		          </div>
-
-                <div class="clear"></div>
-
-				        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-				        <img src="./img/dorm-review.JPG" width="100%"><br/><br/><br/><br/>
-				        <img src="img/review-page.PNG" width="100%"><br/><br/><br/><br/>
-				        <img src="img/rating.PNG" width="100%"><br/><br/><br/><br/>
-                
-                
-					        <div class="prev-next">
-					          <div class="next-button"><a href="class-share.html">Next work</a></div>
-					        </div>
-            </div>
-
+        <div class="prev-next">
+          <div class="next-button">
+            <a href="class-share.html">Next work</a>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!--Home Sidebar-->
 
+    <div id="ajax-sidebar"></div>
 
-  <!--Home Sidebar-->
-
-<div id="ajax-sidebar"></div>
-
-
-  <!--Footer-->
-  <footer id="ajax-footer">
-
-    <div class="footer-margin">
-      <div class="social-footer">
-
- 
-          <a href="https://www.linkedin.com/in/han-wang-813212132/"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/jenny_hw98/"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.facebook.com/han.wang.1614460/"><i class="fa fa-facebook"></i></a>
-          <a href="https://github.com/Jenny1998"><i class="fa fa-github"></i></a>
-
+    <!--Footer-->
+    <footer id="ajax-footer">
+      <div class="footer-margin">
+        <div class="social-footer">
+          <a href="https://www.linkedin.com/in/Jenny-wang-813212132/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/jenny_hw98/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/Jenny.wang.1614460/"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://github.com/Jenny1998"
+            ><i class="fa fa-github"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          © 2020 Jenny Wang Portfolio Site. Template credits to Thomsoon.
+        </div>
       </div>
-      <div class="copyright">© 2020 Han Wang Portfolio Site. Template credits to Thomsoon.</div>
+    </footer>
 
-    </div>
+    <!--Scripts-->
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+    <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jkit.1.2.16.min.js"></script>
 
-  </footer>
+    <script src="js/script.js" type="text/javascript"></script>
 
-
-
-<!--Scripts-->
-
-  <script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
-  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
-  <script src="js/typed.js" type="text/javascript"></script>
-  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/jquery.jkit.1.2.16.min.js"></script>
-
-  <script src="js/script.js" type="text/javascript"></script>
-
-	<script>
-    $('#button, #buttons').on('click', function() {
-      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
-    // Animation complete.
-    });
-  </script>
-
-
-</body>
+    <script>
+      $("#button, #buttons").on("click", function () {
+        $(".opacity-nav").fadeToggle("slow", "linear");
+        // Animation complete.
+      });
+    </script>
+  </body>
 </html>
